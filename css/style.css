@@ -16,6 +16,7 @@ body{
     /* 
     * For background gradient
     */
+    background-repeat: repeat; 
     background: #ffff00; /* Old browsers */
     background: -moz-linear-gradient(top, #ffff00 0%, #ffffff 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffff00), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
@@ -157,21 +158,15 @@ img.center{
 }
 .footer-wrap{
     padding-top: 60px;
+    background: #F5F5F5;
+    background-repeat: repeat;     
 }
 .footer{
-/*    
-    margin:50px 0;
-    min-height:50px;
-    text-align:center;
-    padding: 10px 0px;
-    background: #F5F5F5;
-*/
     clear: both;
     position: relative;
     z-index: 10;
     height: 80px;
     text-align: center;
-    background: #F5F5F5;
     margin:80px 0 0 0;
     padding: 50px 0;    
 }
