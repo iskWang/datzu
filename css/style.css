@@ -1,0 +1,175 @@
+*{
+    font-family:"Microsoft JhengHei", "PMingLiU", "PMingLiU", "Apple LiGothic Medium";
+}
+
+body{
+    height: 100%;
+}
+/*
+*header
+*/
+#header-wrap{
+    width:100%;
+    height:150px;
+    /* 
+    * For background gradient
+    */
+    background: #ffff00; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffff00 0%, #ffffff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffff00), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffff00 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ffff00 0%,#ffffff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ffff00 0%,#ffffff 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #ffff00 0%,#ffffff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff00', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+     /* 
+    * End for background gradient
+    */
+}
+#header, #home-content{
+    max-width:980px;
+    margin:20px auto ;
+    /*margin:0 auto;*/
+    /*padding:20px 30px 5px 30px;*/
+}
+
+#header a{
+    font-size:14px;
+    color:#323232;
+}
+
+.header-left .logo{
+    clear:both;
+    float:left;
+}
+.header-title {margin:0 0 0 10px;}
+.header-title h3{margin:18px 0 0;color:#1680C4;}
+.header-title span{color:#4C4C4C;}
+.header-right{
+    text-align:right;
+    margin:20px 0;
+}
+
+.header-slogan{
+    font-size: 16px;
+    color:#F7931C;
+}
+
+/*
+* nav
+*/
+#nav-wrap{
+    text-align:center;
+}
+#nav li{
+    margin: 0;
+    border:0;
+    /*
+    * For clear button radius
+    */
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+#nav li a:hover, #nav li a:active{
+    text-decoration:none;
+}
+#nav li:first-child{
+    margin:0 0 0 -20px ;
+    -webkit-border-top-left-radius: 100px;
+    -webkit-border-bottom-left-radius: 100px;
+    -moz-border-radius-topleft: 100px;
+    -moz-border-radius-bottomleft: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+#nav li:last-child{
+    -webkit-border-top-right-radius: 100px;
+    -webkit-border-bottom-right-radius: 100px;
+    -moz-border-radius-topright: 100px;
+    -moz-border-radius-bottomright: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+#nav li a{
+    color: #656565;
+}
+.nav-btn-width{
+    width:98px;
+}
+#nav .active{
+    background: rgb(255,204,102); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(255,204,102,1) 0%, rgba(255,125,25,1) 50%, rgba(255,128,0,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,204,102,1)), color-stop(50%,rgba(255,125,25,1)), color-stop(100%,rgba(255,128,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(255,204,102,1) 0%,rgba(255,125,25,1) 50%,rgba(255,128,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(255,204,102,1) 0%,rgba(255,125,25,1) 50%,rgba(255,128,0,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(255,204,102,1) 0%,rgba(255,125,25,1) 50%,rgba(255,128,0,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(255,204,102,1) 0%,rgba(255,125,25,1) 50%,rgba(255,128,0,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc66', endColorstr='#ff8000',GradientType=0 ); /* IE6-9 */
+
+}
+#nav .active a{
+    color:white;
+    font-shadow:0;
+}
+
+img.center{
+    display: block;
+    margin: 0 auto;
+}
+
+#home-content .height{
+    height:250px;
+}
+#home-content .left-margin{
+
+}
+#home-content .title{
+    font-size: 18px;
+}
+#home-content .icon-play-circle{
+    width: 21px;
+    height: 21px;
+    background-size: 703.5px 238.5px;
+    background-position:  -288px -36px;
+    /* background-position: -192px -24px; */
+}
+#home-content .tab-title-height{
+    height: 24px;
+}
+.tab-content{
+    margin:30px 30px;
+}
+.tab-content li{
+    margin:10px 0;
+}
+.tab-content{
+    font-size:16px;
+}
+.keep-left{
+    clear:both;
+    float:left;
+}
+.keep-inline{
+    display: inline;
+}
+.footer-wrap{
+    padding-top: 60px;
+}
+.footer{
+/*    
+    margin:50px 0;
+    min-height:50px;
+    text-align:center;
+    padding: 10px 0px;
+    background: #F5F5F5;
+*/
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 80px;
+    text-align: center;
+    background: #F5F5F5;
+    margin:80px 0 0 0;
+    padding: 50px 0;    
+}

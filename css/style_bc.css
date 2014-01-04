@@ -1,0 +1,101 @@
+/*** reset ***/
+body,input,button,select,textarea{
+	font-family: "Helvetica Neue", Helvetica, Arial, "微軟正黑體", "微軟雅黑", sans-serif;
+	font-size:108%;
+}
+body{
+	background-color: rgb(245, 245, 245);
+}
+.page-width{
+    width:1170px !important;
+    margin: 0 auto;
+}
+
+/*** header ***/
+.navbar{
+	margin: 10px auto 60px;
+}
+.header-logo{
+	width: 300px !important;
+}
+.header-logo a{
+	color: white;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+.header-logo img{
+	clear: both;
+	float: left;
+}
+.header-logo p{
+	margin: 0;
+	font-size: 0.5em;
+}
+.header-logo span{
+	margin: 0 0 0 10px;
+}
+.header-logo .site-name{
+	padding: 10px 0 0 0;
+	font-size: 1em;
+}
+
+.nav-list{
+	float: right;
+}
+.navbar .nav > li > a{
+	color:white;
+	
+	text-shadow:none;
+}
+.navbar .nav > li > a:hover, .navbar .nav > li > a:focus{
+	color: white;
+}
+
+#content-wrap{
+	height: 350px;
+	padding: 20px;
+
+}
+#home-content{
+	padding:0 50px;
+	color:#550000;
+}
+
+/*#home-content p{
+	color: white;
+	text-indent: 2em;
+	text-align: left;
+	text-shadow: 1px 1px 2px black;
+}
+*/
+#home-content ul.marquee{
+	height:200px;
+	background:none;
+	border:none;
+}
+#home-content ul.marquee li{
+	font-size:1em;
+	text-indent: 2em;
+    white-space:normal;
+}
+#home-slider + .btn-group {
+	/*width: 250px;*/
+	width:100%;
+	padding: 50px 0 0 100px;
+}
+#home-slider + .btn-group button{
+	width: 200px;
+}
+
+.footer{
+	min-height: 60px;
+	padding: 10px 0px;
+	text-align: center;
+	font-size: 12px;
+}
+#nav-wrap {
+	background:rgb(85, 0, 0) repeat   ;
+}
+#content-wrap {
+	background: url('../img/old_map.png') repeat  ;
+}
