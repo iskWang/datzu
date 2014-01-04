@@ -166,16 +166,18 @@ img.center{
     min-height: 300px;
 }
 #contents-list {
+    max-width: 200px;
     border: none;
 }
 #contents-list-btn{
     margin:20px 0 0;
 }
 #contents-list-btn li{
-    width: 180px;
+    /*width: 180px;*/
     height: 30px;
     margin:0 0 0 30px;
 }
+
 .keep-left{
     clear:both;
     float:left;
@@ -199,8 +201,4 @@ img.center{
     margin:80px 0 0 0;
     padding: 50px 0;    
     background: #F5F5F5;
-}
-
-ul .nostyle{
-    list-style: none;
 }
