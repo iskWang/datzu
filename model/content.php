@@ -1,9 +1,17 @@
 <?php
 
+	function getSublist_array($sublist_array){
+		$length = count($sublist_array);
+		for ($i=0; $i<$length; $i++){
+			// echo $sublist_array[$i];
+			echo '<li><a href="#">'.$sublist_array[$i].'</a></li>';
+		};
+	};
+	
 
 if ($currentFile == 'index'){
 
-echo <<<__END
+	echo <<<__END
 
 	<div id="main-page" class="container">
 		<div id="main-slogan">
@@ -65,8 +73,7 @@ __END;
 
 }else{
 
-echo <<<__END
-	
+	echo <<<__END
 	<div id="main-page" class="container">
 		<div id="main-slogan">
 			<img src="img/banner-content.png" alt="" class="center">
@@ -76,9 +83,11 @@ echo <<<__END
 				<ul id="contents-list" class="nav nav-tabs span3">
 					<li class="btn-active"><a href=""><i class="icon-play-circle icon-white"></i>功德會介紹</a></li>
 					<ul id="contents-list-btn" class="unstyled">
-						<li><a href="">大慈簡介</a></li>
-						<li><a href="">組織架構</a></li>
-						<li><a href="">大慈章程</a></li>							
+__END;
+if($sublist_array){
+	getSublist_array($sublist_array);
+}
+echo <<<__END
 					</ul>
 				</ul>					
 				<div class="span9">
@@ -95,7 +104,7 @@ echo <<<__END
 				</div>
 			</div>
 		</div>		
-	</div>
+	</div>	
 __END;
 }
 ?>	
