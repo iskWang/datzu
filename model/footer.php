@@ -16,3 +16,11 @@
 	
 </body>
 </html>
+
+<?php 
+
+// $time_end = microtime(true);
+// $time = $time_end - $time_start;
+
+// echo '花了'.$time.'秒';
+?>

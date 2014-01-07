@@ -1,4 +1,5 @@
 <?php
+	$time_start = microtime(true);
 	$currentFile = str_replace(".php", "", basename($_SERVER['PHP_SELF']));
 	function checkCurrentPage($navfile){
 		$currentFile = str_replace(".php", "", basename($_SERVER['PHP_SELF']));
