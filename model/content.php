@@ -1,54 +1,9 @@
-<!doctype html>
-<html lang="zh-TW">
-<head>
-	<meta charset="UTF-8">
-	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<title>大慈功德會 全球官方網站</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<!-- <link rel="stylesheet" href="css/bootstrap-responsive.min.css"> -->
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	<div id="header-wrap" class="container header-bc">
-		<div id="header" class="row-fluid">
-			<div class="header-left span6">
-				<div class="logo"><a href=""><img src="img/logo.png" alt="大慈功德會"></a></div>
-				<div class="header-title">
-					<a href=""><h3>大慈功德會</h3></a>
-					<span>Da tzu Foundation</span>
-				</div>
-			</div>
-			<div class="header-right span6">
-				<div class="header-slogan"><span>關懷弱勢不分你我</span></div><br>
-				<div class="header-right-bottom">
-					<div class="member-search-bar">
-						<a href="#"><span>加入我們</span></a>
-						<a href="#"><span>志工登入</span></a>
-						<a href=""><i class="icon-home"></i></a>
-					    <div class="input-append">
-					    	<input id="appendedInputButton" type="text">
-					    	<button class="btn" type="button"><i class="icon-search"></i></button>
-					    </div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="nav-wrap" class="container">
-		<div id="nav" class="btn-group">
-			<nav>
-				<ul>
-					<li class="nav-btn-width btn btn-large active"><a href="">活動訊息</a></li>
-					<li class="nav-btn-width btn btn-large"><a href="content.html">功德會介紹</a></li>
-					<li class="nav-btn-width btn btn-large"><a href="">傳愛成果</a></li>
-					<li class="nav-btn-width btn btn-large"><a href="">尋求幫助</a></li>
-					<li class="nav-btn-width btn btn-large"><a href="">聯繫我們</a></li>
-					<li class="nav-btn-width btn btn-large"><a href="">第六按鈕</a></li>
-					<li class="nav-btn-width btn btn-large"><a href="">第七按鈕</a></li>
-				</ul>
-			</nav>
-		</div>
-	</div>
+<?php
+
+
+if ($currentFile == 'index'){
+
+echo <<<__END
 
 	<div id="main-page" class="container">
 		<div id="main-slogan">
@@ -105,17 +60,42 @@
 			</div>
 		</div>		
 	</div>
-	<div id="footer-wrap">
-		<div id="footer" class="footer">
-			<div class="container">
-				<a href="">活動訊息</a>
-				<a href="">功德會介紹</a>
-				<a href="">傳愛成果</a>
-				<a href="">尋求幫助</a>
-				<a href="">聯繫我們</a>
-			</div>
-		</div>
-	</div>
 
-</body>
-</html>
+__END;
+
+}else{
+
+echo <<<__END
+	
+	<div id="main-page" class="container">
+		<div id="main-slogan">
+			<img src="img/banner-content.png" alt="" class="center">
+		</div>	
+		<div id="home-content-wrap">
+			<div id="home-content" class="row-fluid tabbable tabs-left contents">
+				<ul id="contents-list" class="nav nav-tabs span3">
+					<li class="btn-active"><a href=""><i class="icon-play-circle icon-white"></i>功德會介紹</a></li>
+					<ul id="contents-list-btn" class="unstyled">
+						<li><a href="">大慈簡介</a></li>
+						<li><a href="">組織架構</a></li>
+						<li><a href="">大慈章程</a></li>							
+					</ul>
+				</ul>					
+				<div class="span9">
+					<ul class="nav nav-tabs">
+						<li class="active">
+							<a href="#content" class="tab-title-height">最新活動</a>
+						</li>
+					</ul>
+					<div class="tab-content">
+						<div id="content" class="tab-pane active">
+							<p>$content</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+__END;
+}
+?>	
