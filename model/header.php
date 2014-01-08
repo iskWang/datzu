@@ -24,7 +24,7 @@ echo <<<__END
 	<div id="header-wrap" class="container header-bc">
 		<div id="header" class="row-fluid">
 			<div class="header-left span6">
-				<div class="logo"><a href=""><img src="img/logo.png" alt="大慈功德會"></a></div>
+				<div class="logo"><a href="index.php"><img src="img/logo.png" alt="大慈功德會"></a></div>
 				<div class="header-title">
 					<a href="index.php"><h3>大慈功德會</h3></a>
 					<span>Da tzu Foundation</span>
